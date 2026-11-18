@@ -2,20 +2,18 @@
 
 [![CI](https://github.com/Giopi222/DeepLOB-Models-Comparison/actions/workflows/ci.yml/badge.svg)](https://github.com/Giopi222/DeepLOB-Models-Comparison/actions/workflows/ci.yml)
 
-Transformers replaced LSTMs in most sequence-modelling tasks. Does the same hold for limit order
-book (LOB) data? This repo takes **DeepLOB** (Zhang et al., 2018), a CNN-LSTM for mid-price
+Transformers replaced LSTMs in most sequence-modelling tasks. Does the same hold for Limit Order Book (LOB) data? This repo takes **DeepLOB** (Zhang et al., 2018), a CNN-LSTM for mid-price
 prediction, swaps its LSTM for a **Transformer encoder**, and compares the two under a controlled
 protocol: same CNN front-end, same data pipeline, same optimiser and training budget, matched
 parameter count (~60k), several seeds.
 
-**Result:** the Transformer is better by a small but consistent margin, +0.9 pt macro-F1 over 5
-seeds (every Transformer seed beats every DeepLOB seed). It needs about 40% more training time.
+**Result:** the Transformer is better by a small but consistent margin, +0.9 pt macro-F1 over seeds (every Transformer seed beats every DeepLOB seed), but it needs about 40% more training time.
 
 ## Task
 
 Given the last 100 LOB snapshots (10 levels × ask/bid price and volume = 40 features), classify the
-mid-price move over the next *k* = 50 events as **up / stationary / down**. FI-2010 labels compare
-the mean of the next *k* mid-prices with the current one (Ntakaris et al., 2017).
+mid-price move over the next *k* = 50 events as **up / stationary / down**.   
+FI-2010 labels compare the mean of the next *k* mid-prices with the current one (Ntakaris et al., 2017).
 
 ## Models
 
@@ -36,7 +34,7 @@ the mean of the next *k* mid-prices with the current one (Ntakaris et al., 2017)
    DeepLOB: 60,947 parameters     CNN-Transformer: 59,155 parameters
 ```
 
-- The CNN front-end is shared, so the only difference is the temporal block (LSTM vs. attention).
+- The CNN front-end is shared, so the only difference is the temporal block (*LSTM vs. attention*).
 - DeepLOB follows the paper: 16 filters, inception with 32 filters per branch, Leaky ReLU (0.01), no
   batch norm. The PyTorch port reproduces the outputs of the original Keras model to within 1e-7
   when given the same weights.
@@ -101,37 +99,8 @@ Per-class F1 (up / stationary / down): DeepLOB 0.730 / 0.842 / 0.714; CNN-Transf
 0.738 / 0.847 / 0.727. Confusion matrices are in [`results/summary.md`](results/summary.md) and the
 per-epoch logs in [`results/train_log.txt`](results/train_log.txt).
 
-## Discussion
 
-- **The Transformer wins narrowly but consistently.** At matched capacity and identical training,
-  swapping the LSTM for one attention layer adds 0.8 pt of accuracy, 0.9 pt of macro-F1 and 1.2 pt
-  of κ. The gap is small in absolute terms but 2.5–3 seed standard deviations wide. On all
-  three metrics every Transformer seed beats every DeepLOB seed (exact Mann-Whitney p = 0.008, the
-  smallest value possible with 5 runs against 5).
-- **Where the gain comes from.** It is spread over all three classes and is largest on "down"
-  (+1.3 pt F1). The Transformer also makes slightly fewer wrong-direction errors (up predicted as
-  down: 11.7% vs. 12.5%; down predicted as up: 12.0% vs. 12.7%), which are the costliest mistakes
-  for a trading signal. For both models the most common error is calling a real move
-  "stationary": about 17% of true up and true down windows.
-- **Cost.** The Transformer is about 20% slower per epoch and reaches its best validation epoch
-  later (12.8 vs. 10.4; across seeds that difference is not significant), so it needs about 40%
-  more training time. With identical optimisation it does *not* converge faster.
-- **Why the gap is small.** The shared CNN and inception front-end already extracts local temporal
-  patterns, so the temporal block mainly has to aggregate a 100-step sequence. On windows that
-  short, the LSTM's bias towards recent events is a sensible prior, which leaves attention's direct
-  access to every time step little room to help. This is a hypothesis: testing it needs ablations
-  such as longer windows or removing the front-end.
-- **Comparison with the paper.** Our DeepLOB reaches 78.0% accuracy, against 80.5% reported by
-  Zhang et al. for the same setup. The paper trained for about 100 epochs (patience 20, batch 32,
-  Adam with learning rate 0.01 and ε = 1) on the provider's z-scored files. Our budget is shorter
-  and shared by both models, so the gap does not bias the comparison, but neither model is likely
-  at its ceiling.
-- **The old result is reversed.** An earlier version of this repo reported 77.6% vs. 74.8%
-  accuracy in favour of DeepLOB. That comparison was confounded (different optimisers and
-  learning-rate schedules, 2.6× more parameters in the Transformer, one run each) and has been
-  withdrawn.
-
-**Limitations**:
+## Limitations:
 
 - Seeds capture training randomness only. The test set is a single 3-day period, so whether the
   gap holds across other stocks, periods and horizons is untested. Validation macro-F1 (about 0.68)
@@ -145,7 +114,7 @@ per-epoch logs in [`results/train_log.txt`](results/train_log.txt).
   windows straddle a stock or day boundary. This affects both models equally.
 - Hyperparameters are shared, not tuned per model. Transformers are often more sensitive to the
   learning rate and warm-up, so a small per-model sweep on validation is the natural next step.
-- Only *k* = 50 was run; `--horizon` also supports 10, 20, 30 and 100.
+
 
 ## Repository layout
 
@@ -160,9 +129,6 @@ results/         summary of the reported run and per-epoch training logs
 
 ## References
 
-- Zhang, Z., Zohren, S., Roberts, S. (2018). *DeepLOB: Deep Convolutional Neural Networks for Limit
-  Order Books.* arXiv:1808.03668; IEEE Transactions on Signal Processing, 2019.
-- Ntakaris, A., Magris, M., Kanniainen, J., Gabbouj, M., Iosifidis, A. (2017). *Benchmark Dataset
-  for Mid-Price Forecasting of Limit Order Book Data with Machine Learning Methods.*
-  arXiv:1705.03233; Journal of Forecasting, 2018.
-- Vaswani, A., et al. (2017). *Attention Is All You Need.* NeurIPS. arXiv:1706.03762.
+- Zhang, Z., Zohren, S., Roberts, S. (2018). *DeepLOB: Deep Convolutional Neural Networks for Limit Order Books.*
+- Ntakaris, A., Magris, M., Kanniainen, J., Gabbouj, M., Iosifidis, A. (2017). *Benchmark Dataset for Mid-Price Forecasting of Limit Order Book Data with Machine Learning Methods.*
+- Vaswani, A., et al. (2017). *Attention Is All You Need.* 
