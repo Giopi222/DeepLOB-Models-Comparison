@@ -1,0 +1,195 @@
+=== DeepLOB (CNN-LSTM) | seed 0 ===
+epoch   1 | train loss 0.9076 | val loss 0.9060 | val macro-F1 0.5180 |      31s
+epoch   2 | train loss 0.7457 | val loss 0.8358 | val macro-F1 0.5903 |      62s
+epoch   3 | train loss 0.6661 | val loss 0.7921 | val macro-F1 0.6312 |      96s
+epoch   4 | train loss 0.6283 | val loss 0.7870 | val macro-F1 0.6427 |     129s
+epoch   5 | train loss 0.6060 | val loss 0.7939 | val macro-F1 0.6442 |     162s
+epoch   6 | train loss 0.5900 | val loss 0.7642 | val macro-F1 0.6605 |     195s
+epoch   7 | train loss 0.5786 | val loss 0.7542 | val macro-F1 0.6691 |     228s
+epoch   8 | train loss 0.5691 | val loss 0.7403 | val macro-F1 0.6774 |     262s
+epoch   9 | train loss 0.5610 | val loss 0.7350 | val macro-F1 0.6795 |     295s
+epoch  10 | train loss 0.5532 | val loss 0.7568 | val macro-F1 0.6596 |     328s
+epoch  11 | train loss 0.5462 | val loss 0.7362 | val macro-F1 0.6807 |     361s
+epoch  12 | train loss 0.5393 | val loss 0.7505 | val macro-F1 0.6738 |     394s
+epoch  13 | train loss 0.5331 | val loss 0.7530 | val macro-F1 0.6703 |     427s
+epoch  14 | train loss 0.5265 | val loss 0.7595 | val macro-F1 0.6634 |     460s
+test accuracy 0.7825 | macro-F1 0.7647 | kappa 0.6562
+
+=== DeepLOB (CNN-LSTM) | seed 1 ===
+epoch   1 | train loss 0.9590 | val loss 1.1353 | val macro-F1 0.2617 |      33s
+epoch   2 | train loss 0.8673 | val loss 0.8848 | val macro-F1 0.4350 |      66s
+epoch   3 | train loss 0.7931 | val loss 0.8506 | val macro-F1 0.5760 |     100s
+epoch   4 | train loss 0.6998 | val loss 0.7969 | val macro-F1 0.6327 |     133s
+epoch   5 | train loss 0.6547 | val loss 0.7850 | val macro-F1 0.6381 |     166s
+epoch   6 | train loss 0.6289 | val loss 0.7627 | val macro-F1 0.6592 |     199s
+epoch   7 | train loss 0.6113 | val loss 0.7677 | val macro-F1 0.6565 |     232s
+epoch   8 | train loss 0.5985 | val loss 0.7825 | val macro-F1 0.6501 |     266s
+epoch   9 | train loss 0.5901 | val loss 0.7615 | val macro-F1 0.6551 |     299s
+epoch  10 | train loss 0.5819 | val loss 0.7654 | val macro-F1 0.6595 |     332s
+epoch  11 | train loss 0.5746 | val loss 0.7569 | val macro-F1 0.6612 |     365s
+epoch  12 | train loss 0.5680 | val loss 0.7368 | val macro-F1 0.6755 |     398s
+epoch  13 | train loss 0.5606 | val loss 0.7611 | val macro-F1 0.6627 |     432s
+epoch  14 | train loss 0.5551 | val loss 0.7479 | val macro-F1 0.6735 |     465s
+epoch  15 | train loss 0.5489 | val loss 0.7749 | val macro-F1 0.6675 |     498s
+epoch  16 | train loss 0.5434 | val loss 0.7427 | val macro-F1 0.6791 |     531s
+epoch  17 | train loss 0.5376 | val loss 0.7471 | val macro-F1 0.6764 |     564s
+test accuracy 0.7784 | macro-F1 0.7592 | kappa 0.6486
+
+=== DeepLOB (CNN-LSTM) | seed 2 ===
+epoch   1 | train loss 0.8757 | val loss 0.8487 | val macro-F1 0.6016 |      33s
+epoch   2 | train loss 0.6726 | val loss 0.8191 | val macro-F1 0.6161 |      66s
+epoch   3 | train loss 0.6297 | val loss 0.8009 | val macro-F1 0.6265 |      99s
+epoch   4 | train loss 0.6063 | val loss 0.8044 | val macro-F1 0.6401 |     132s
+epoch   5 | train loss 0.5917 | val loss 0.7548 | val macro-F1 0.6660 |     166s
+epoch   6 | train loss 0.5796 | val loss 0.7513 | val macro-F1 0.6660 |     199s
+epoch   7 | train loss 0.5703 | val loss 0.7538 | val macro-F1 0.6647 |     232s
+epoch   8 | train loss 0.5625 | val loss 0.7534 | val macro-F1 0.6696 |     265s
+epoch   9 | train loss 0.5548 | val loss 0.7608 | val macro-F1 0.6632 |     298s
+epoch  10 | train loss 0.5472 | val loss 0.7479 | val macro-F1 0.6748 |     331s
+epoch  11 | train loss 0.5418 | val loss 0.7571 | val macro-F1 0.6667 |     365s
+epoch  12 | train loss 0.5355 | val loss 0.7557 | val macro-F1 0.6669 |     398s
+epoch  13 | train loss 0.5305 | val loss 0.7583 | val macro-F1 0.6735 |     431s
+epoch  14 | train loss 0.5248 | val loss 0.7741 | val macro-F1 0.6632 |     464s
+epoch  15 | train loss 0.5190 | val loss 0.7734 | val macro-F1 0.6626 |     497s
+test accuracy 0.7759 | macro-F1 0.7595 | kappa 0.6485
+
+=== DeepLOB (CNN-LSTM) | seed 3 ===
+epoch   1 | train loss 0.9203 | val loss 0.9831 | val macro-F1 0.4009 |      33s
+epoch   2 | train loss 0.8528 | val loss 0.9077 | val macro-F1 0.4707 |      66s
+epoch   3 | train loss 0.7445 | val loss 0.8737 | val macro-F1 0.5288 |      99s
+epoch   4 | train loss 0.6759 | val loss 0.8398 | val macro-F1 0.5866 |     132s
+epoch   5 | train loss 0.6342 | val loss 0.7994 | val macro-F1 0.6295 |     165s
+epoch   6 | train loss 0.6069 | val loss 0.7741 | val macro-F1 0.6515 |     198s
+epoch   7 | train loss 0.5890 | val loss 0.7572 | val macro-F1 0.6612 |     232s
+epoch   8 | train loss 0.5768 | val loss 0.7623 | val macro-F1 0.6637 |     265s
+epoch   9 | train loss 0.5668 | val loss 0.7805 | val macro-F1 0.6542 |     298s
+epoch  10 | train loss 0.5571 | val loss 0.7722 | val macro-F1 0.6553 |     331s
+epoch  11 | train loss 0.5513 | val loss 0.7594 | val macro-F1 0.6639 |     364s
+epoch  12 | train loss 0.5434 | val loss 0.7742 | val macro-F1 0.6612 |     397s
+test accuracy 0.7821 | macro-F1 0.7620 | kappa 0.6540
+
+=== DeepLOB (CNN-LSTM) | seed 4 ===
+epoch   1 | train loss 0.9742 | val loss 1.0968 | val macro-F1 0.1801 |      33s
+epoch   2 | train loss 0.9197 | val loss 1.0938 | val macro-F1 0.2519 |      66s
+epoch   3 | train loss 0.8699 | val loss 0.8925 | val macro-F1 0.5351 |      99s
+epoch   4 | train loss 0.7374 | val loss 0.8459 | val macro-F1 0.5831 |     132s
+epoch   5 | train loss 0.6698 | val loss 0.8156 | val macro-F1 0.6311 |     166s
+epoch   6 | train loss 0.6327 | val loss 0.7932 | val macro-F1 0.6440 |     199s
+epoch   7 | train loss 0.6062 | val loss 0.7677 | val macro-F1 0.6652 |     232s
+epoch   8 | train loss 0.5889 | val loss 0.7668 | val macro-F1 0.6584 |     265s
+epoch   9 | train loss 0.5758 | val loss 0.7466 | val macro-F1 0.6727 |     298s
+epoch  10 | train loss 0.5663 | val loss 0.7499 | val macro-F1 0.6698 |     331s
+epoch  11 | train loss 0.5564 | val loss 0.7735 | val macro-F1 0.6525 |     364s
+epoch  12 | train loss 0.5492 | val loss 0.7719 | val macro-F1 0.6594 |     397s
+epoch  13 | train loss 0.5419 | val loss 0.7598 | val macro-F1 0.6688 |     431s
+epoch  14 | train loss 0.5345 | val loss 0.7404 | val macro-F1 0.6788 |     464s
+epoch  15 | train loss 0.5282 | val loss 0.7539 | val macro-F1 0.6725 |     497s
+epoch  16 | train loss 0.5206 | val loss 0.7595 | val macro-F1 0.6707 |     530s
+epoch  17 | train loss 0.5136 | val loss 0.7583 | val macro-F1 0.6745 |     563s
+epoch  18 | train loss 0.5069 | val loss 0.7640 | val macro-F1 0.6692 |     596s
+epoch  19 | train loss 0.4999 | val loss 0.7743 | val macro-F1 0.6717 |     629s
+test accuracy 0.7828 | macro-F1 0.7645 | kappa 0.6556
+
+=== CNN-Transformer | seed 0 ===
+epoch   1 | train loss 0.8486 | val loss 0.8350 | val macro-F1 0.6107 |      41s
+epoch   2 | train loss 0.6694 | val loss 0.7918 | val macro-F1 0.6432 |      81s
+epoch   3 | train loss 0.6275 | val loss 0.7741 | val macro-F1 0.6510 |     122s
+epoch   4 | train loss 0.6051 | val loss 0.7600 | val macro-F1 0.6669 |     162s
+epoch   5 | train loss 0.5907 | val loss 0.7701 | val macro-F1 0.6511 |     202s
+epoch   6 | train loss 0.5805 | val loss 0.7733 | val macro-F1 0.6595 |     243s
+epoch   7 | train loss 0.5714 | val loss 0.7533 | val macro-F1 0.6744 |     283s
+epoch   8 | train loss 0.5639 | val loss 0.7405 | val macro-F1 0.6783 |     323s
+epoch   9 | train loss 0.5586 | val loss 0.7452 | val macro-F1 0.6720 |     364s
+epoch  10 | train loss 0.5534 | val loss 0.7656 | val macro-F1 0.6603 |     404s
+epoch  11 | train loss 0.5484 | val loss 0.7366 | val macro-F1 0.6781 |     444s
+epoch  12 | train loss 0.5443 | val loss 0.7467 | val macro-F1 0.6774 |     484s
+epoch  13 | train loss 0.5405 | val loss 0.7454 | val macro-F1 0.6831 |     525s
+epoch  14 | train loss 0.5366 | val loss 0.7442 | val macro-F1 0.6777 |     565s
+epoch  15 | train loss 0.5335 | val loss 0.7449 | val macro-F1 0.6775 |     605s
+epoch  16 | train loss 0.5315 | val loss 0.7542 | val macro-F1 0.6774 |     645s
+test accuracy 0.7875 | macro-F1 0.7693 | kappa 0.6629
+
+=== CNN-Transformer | seed 1 ===
+epoch   1 | train loss 0.9419 | val loss 0.9169 | val macro-F1 0.4223 |      40s
+epoch   2 | train loss 0.8145 | val loss 0.8628 | val macro-F1 0.5674 |      81s
+epoch   3 | train loss 0.6987 | val loss 0.8201 | val macro-F1 0.6053 |     121s
+epoch   4 | train loss 0.6493 | val loss 0.8000 | val macro-F1 0.6354 |     161s
+epoch   5 | train loss 0.6201 | val loss 0.7703 | val macro-F1 0.6545 |     202s
+epoch   6 | train loss 0.5997 | val loss 0.7735 | val macro-F1 0.6669 |     242s
+epoch   7 | train loss 0.5857 | val loss 0.7489 | val macro-F1 0.6735 |     283s
+epoch   8 | train loss 0.5750 | val loss 0.7419 | val macro-F1 0.6747 |     323s
+epoch   9 | train loss 0.5651 | val loss 0.7395 | val macro-F1 0.6753 |     363s
+epoch  10 | train loss 0.5575 | val loss 0.7292 | val macro-F1 0.6890 |     404s
+epoch  11 | train loss 0.5516 | val loss 0.7479 | val macro-F1 0.6767 |     444s
+epoch  12 | train loss 0.5470 | val loss 0.7316 | val macro-F1 0.6788 |     485s
+epoch  13 | train loss 0.5405 | val loss 0.7281 | val macro-F1 0.6874 |     525s
+epoch  14 | train loss 0.5369 | val loss 0.7241 | val macro-F1 0.6899 |     566s
+epoch  15 | train loss 0.5342 | val loss 0.7161 | val macro-F1 0.6900 |     606s
+epoch  16 | train loss 0.5291 | val loss 0.7233 | val macro-F1 0.6892 |     647s
+epoch  17 | train loss 0.5267 | val loss 0.7182 | val macro-F1 0.6940 |     687s
+epoch  18 | train loss 0.5238 | val loss 0.7321 | val macro-F1 0.6899 |     728s
+epoch  19 | train loss 0.5214 | val loss 0.7258 | val macro-F1 0.6944 |     768s
+epoch  20 | train loss 0.5177 | val loss 0.7306 | val macro-F1 0.6903 |     808s
+test accuracy 0.7937 | macro-F1 0.7758 | kappa 0.6719
+
+=== CNN-Transformer | seed 2 ===
+epoch   1 | train loss 0.9291 | val loss 0.8946 | val macro-F1 0.4711 |      40s
+epoch   2 | train loss 0.8570 | val loss 0.8791 | val macro-F1 0.4390 |      81s
+epoch   3 | train loss 0.7247 | val loss 0.8449 | val macro-F1 0.5956 |     121s
+epoch   4 | train loss 0.6568 | val loss 0.8224 | val macro-F1 0.6167 |     162s
+epoch   5 | train loss 0.6215 | val loss 0.7768 | val macro-F1 0.6493 |     202s
+epoch   6 | train loss 0.5999 | val loss 0.7620 | val macro-F1 0.6599 |     242s
+epoch   7 | train loss 0.5848 | val loss 0.7528 | val macro-F1 0.6782 |     283s
+epoch   8 | train loss 0.5747 | val loss 0.7445 | val macro-F1 0.6776 |     323s
+epoch   9 | train loss 0.5669 | val loss 0.7530 | val macro-F1 0.6705 |     364s
+epoch  10 | train loss 0.5616 | val loss 0.7558 | val macro-F1 0.6760 |     405s
+epoch  11 | train loss 0.5556 | val loss 0.7374 | val macro-F1 0.6782 |     445s
+epoch  12 | train loss 0.5514 | val loss 0.7402 | val macro-F1 0.6781 |     485s
+epoch  13 | train loss 0.5473 | val loss 0.7331 | val macro-F1 0.6809 |     526s
+epoch  14 | train loss 0.5431 | val loss 0.7477 | val macro-F1 0.6782 |     566s
+epoch  15 | train loss 0.5396 | val loss 0.7443 | val macro-F1 0.6752 |     607s
+epoch  16 | train loss 0.5371 | val loss 0.7448 | val macro-F1 0.6808 |     647s
+epoch  17 | train loss 0.5341 | val loss 0.7451 | val macro-F1 0.6776 |     688s
+epoch  18 | train loss 0.5315 | val loss 0.7589 | val macro-F1 0.6630 |     728s
+test accuracy 0.7895 | macro-F1 0.7716 | kappa 0.6666
+
+=== CNN-Transformer | seed 3 ===
+epoch   1 | train loss 0.8473 | val loss 0.8791 | val macro-F1 0.5882 |      40s
+epoch   2 | train loss 0.6708 | val loss 0.8406 | val macro-F1 0.6168 |      81s
+epoch   3 | train loss 0.6263 | val loss 0.7859 | val macro-F1 0.6535 |     121s
+epoch   4 | train loss 0.6019 | val loss 0.7616 | val macro-F1 0.6585 |     162s
+epoch   5 | train loss 0.5869 | val loss 0.7526 | val macro-F1 0.6698 |     202s
+epoch   6 | train loss 0.5768 | val loss 0.7487 | val macro-F1 0.6738 |     243s
+epoch   7 | train loss 0.5695 | val loss 0.7343 | val macro-F1 0.6839 |     283s
+epoch   8 | train loss 0.5612 | val loss 0.7403 | val macro-F1 0.6841 |     324s
+epoch   9 | train loss 0.5567 | val loss 0.7785 | val macro-F1 0.6673 |     364s
+epoch  10 | train loss 0.5517 | val loss 0.7645 | val macro-F1 0.6644 |     405s
+epoch  11 | train loss 0.5455 | val loss 0.7333 | val macro-F1 0.6822 |     445s
+epoch  12 | train loss 0.5420 | val loss 0.7495 | val macro-F1 0.6694 |     486s
+epoch  13 | train loss 0.5380 | val loss 0.7326 | val macro-F1 0.6834 |     526s
+epoch  14 | train loss 0.5351 | val loss 0.7553 | val macro-F1 0.6781 |     566s
+epoch  15 | train loss 0.5313 | val loss 0.7372 | val macro-F1 0.6787 |     607s
+epoch  16 | train loss 0.5284 | val loss 0.7296 | val macro-F1 0.6887 |     647s
+epoch  17 | train loss 0.5249 | val loss 0.7388 | val macro-F1 0.6872 |     688s
+epoch  18 | train loss 0.5224 | val loss 0.7486 | val macro-F1 0.6811 |     728s
+epoch  19 | train loss 0.5192 | val loss 0.7491 | val macro-F1 0.6761 |     769s
+epoch  20 | train loss 0.5178 | val loss 0.7450 | val macro-F1 0.6804 |     809s
+epoch  21 | train loss 0.5150 | val loss 0.7629 | val macro-F1 0.6784 |     850s
+test accuracy 0.7870 | macro-F1 0.7701 | kappa 0.6635
+
+=== CNN-Transformer | seed 4 ===
+epoch   1 | train loss 0.9371 | val loss 0.9150 | val macro-F1 0.4266 |      40s
+epoch   2 | train loss 0.8222 | val loss 0.8722 | val macro-F1 0.5311 |      81s
+epoch   3 | train loss 0.6947 | val loss 0.8414 | val macro-F1 0.5967 |     121s
+epoch   4 | train loss 0.6483 | val loss 0.7943 | val macro-F1 0.6335 |     162s
+epoch   5 | train loss 0.6196 | val loss 0.7616 | val macro-F1 0.6654 |     202s
+epoch   6 | train loss 0.6008 | val loss 0.7677 | val macro-F1 0.6584 |     243s
+epoch   7 | train loss 0.5888 | val loss 0.7504 | val macro-F1 0.6743 |     283s
+epoch   8 | train loss 0.5786 | val loss 0.7674 | val macro-F1 0.6576 |     324s
+epoch   9 | train loss 0.5700 | val loss 0.7296 | val macro-F1 0.6841 |     364s
+epoch  10 | train loss 0.5641 | val loss 0.7422 | val macro-F1 0.6788 |     405s
+epoch  11 | train loss 0.5580 | val loss 0.7352 | val macro-F1 0.6804 |     445s
+epoch  12 | train loss 0.5517 | val loss 0.7440 | val macro-F1 0.6789 |     485s
+epoch  13 | train loss 0.5475 | val loss 0.7374 | val macro-F1 0.6814 |     526s
+epoch  14 | train loss 0.5426 | val loss 0.7308 | val macro-F1 0.6817 |     566s
+test accuracy 0.7847 | macro-F1 0.7672 | kappa 0.6596
