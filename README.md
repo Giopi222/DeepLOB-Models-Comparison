@@ -1,7 +1,5 @@
 # DeepLOB vs. CNN-Transformer on FI-2010
 
-[![CI](https://github.com/Giopi222/DeepLOB-Models-Comparison/actions/workflows/ci.yml/badge.svg)](https://github.com/Giopi222/DeepLOB-Models-Comparison/actions/workflows/ci.yml)
-
 Transformers replaced LSTMs in most sequence-modelling tasks. Does the same hold for Limit Order Book (LOB) data? This repo takes **DeepLOB** (Zhang et al., 2018), a CNN-LSTM for mid-price
 prediction, swaps its LSTM for a **Transformer encoder**, and compares the two under a controlled
 protocol: same CNN front-end, same data pipeline, same optimiser and training budget, matched
@@ -93,7 +91,6 @@ Test days 8–10, horizon *k* = 50, Tesla T4. Values are mean ± std over seeds 
 |---|---:|---:|---:|---:|---:|---:|---:|
 | DeepLOB (CNN-LSTM) | 60,947 | 0.780 ± 0.003 | 0.762 ± 0.003 | 0.653 ± 0.004 | 10.4 ± 2.7 | 33 s | 8.5 ± 1.5 min |
 | CNN-Transformer | 59,155 | **0.788 ± 0.003** | **0.771 ± 0.003** | **0.665 ± 0.005** | 12.8 ± 2.9 | 40 s | 12.0 ± 1.9 min |
-| Constant "stationary" | – | 0.474 | 0.214 | 0.000 | – | – | – |
 
 Per-class F1 (up / stationary / down): DeepLOB 0.730 / 0.842 / 0.714; CNN-Transformer
 0.738 / 0.847 / 0.727. Confusion matrices are in [`results/summary.md`](results/summary.md) and the
